@@ -1,0 +1,164 @@
+magic
+tech tsmc180
+timestamp 1672154672
+<< nwell >>
+rect 0 429 231 866
+<< polysilicon >>
+rect 54 700 63 819
+rect 92 807 101 819
+rect 54 597 63 651
+rect 92 639 101 758
+rect 130 700 139 819
+rect 168 807 177 819
+rect 168 672 177 758
+rect 54 221 63 574
+rect 54 171 63 198
+rect 54 86 63 144
+rect 92 119 101 618
+rect 130 597 139 651
+rect 130 221 139 574
+rect 54 45 63 59
+rect 92 45 101 98
+rect 130 86 139 198
+rect 168 171 177 651
+rect 168 86 177 144
+rect 130 45 139 59
+rect 168 45 177 65
+<< ndiffusion >>
+rect 51 144 54 171
+rect 63 144 66 171
+rect 51 59 54 86
+rect 63 59 66 86
+rect 165 144 168 171
+rect 177 144 180 171
+rect 127 59 130 86
+rect 139 59 142 86
+<< pdiffusion >>
+rect 89 758 92 807
+rect 101 758 104 807
+rect 51 651 54 700
+rect 63 651 66 700
+rect 165 758 168 807
+rect 177 758 180 807
+rect 127 651 130 700
+rect 139 651 142 700
+<< pohmic >>
+rect 0 9 36 32
+rect 59 9 231 32
+rect 0 7 231 9
+<< nohmic >>
+rect 0 836 64 859
+rect 87 836 231 859
+rect 0 834 231 836
+<< ntransistor >>
+rect 54 144 63 171
+rect 54 59 63 86
+rect 168 144 177 171
+rect 130 59 139 86
+<< ptransistor >>
+rect 92 758 101 807
+rect 54 651 63 700
+rect 168 758 177 807
+rect 130 651 139 700
+<< polycontact >>
+rect 168 651 189 672
+rect 86 618 107 639
+rect 54 574 77 597
+rect 54 198 77 221
+rect 130 574 153 597
+rect 130 198 153 221
+rect 92 98 113 119
+rect 168 65 189 86
+<< ndiffcontact >>
+rect 30 144 51 171
+rect 66 144 87 171
+rect 30 59 51 86
+rect 66 59 87 86
+rect 144 144 165 171
+rect 180 144 201 171
+rect 106 59 127 86
+rect 142 59 163 86
+<< pdiffcontact >>
+rect 68 758 89 807
+rect 104 758 125 807
+rect 30 651 51 700
+rect 66 651 87 700
+rect 144 758 165 807
+rect 180 758 201 807
+rect 106 651 127 700
+rect 142 651 163 700
+<< psubstratetap >>
+rect 36 9 59 32
+<< nsubstratetap >>
+rect 64 836 87 859
+<< metal1 >>
+rect 0 836 64 859
+rect 87 836 231 859
+rect 0 834 231 836
+rect 77 807 89 834
+rect 125 758 144 770
+rect 71 700 83 758
+rect 87 688 106 700
+rect 163 651 168 672
+rect 35 639 47 651
+rect 35 627 86 639
+rect 0 434 231 446
+rect 0 401 231 413
+rect 0 377 231 389
+rect 0 353 231 365
+rect 0 329 231 341
+rect 87 146 144 158
+rect 30 86 42 144
+rect 75 98 92 110
+rect 75 86 87 98
+rect 163 65 168 86
+rect 30 32 42 59
+rect 106 32 118 59
+rect 0 9 36 32
+rect 59 9 231 32
+rect 0 7 231 9
+<< m2contact >>
+rect 180 758 201 781
+rect 201 758 203 781
+rect 54 574 77 597
+rect 130 574 153 597
+rect 54 198 77 221
+rect 130 198 153 221
+rect 180 148 201 171
+rect 201 148 203 171
+<< metal2 >>
+rect 66 597 80 866
+rect 132 597 146 866
+rect 198 781 212 866
+rect 203 758 212 781
+rect 77 574 80 597
+rect 66 221 80 574
+rect 132 221 146 574
+rect 77 198 80 221
+rect 66 0 80 198
+rect 132 0 146 198
+rect 198 171 212 758
+rect 203 148 212 171
+rect 198 0 212 148
+<< labels >>
+rlabel metal1 0 329 0 341 1 nReset
+rlabel metal1 231 329 231 341 1 nReset
+rlabel metal1 0 353 0 365 1 Clock
+rlabel metal1 231 353 231 365 1 Clock
+rlabel metal1 0 377 0 389 1 Test
+rlabel metal1 231 377 231 389 1 Test
+rlabel metal1 231 401 231 413 1 Scan
+rlabel metal1 0 401 0 413 1 Scan
+rlabel metal2 198 0 212 0 1 Y
+rlabel metal2 66 0 80 0 1 Enable
+rlabel metal2 132 0 146 0 1 A
+rlabel metal1 0 834 0 859 3 Vdd!
+rlabel metal1 231 834 231 859 7 Vdd!
+rlabel metal1 0 434 0 446 1 ScanReturn
+rlabel metal1 231 434 231 446 1 ScanReturn
+rlabel metal2 66 866 80 866 5 Enable
+rlabel metal2 132 866 146 866 5 A
+rlabel metal2 198 866 212 866 5 Y
+rlabel metal1 0 7 0 32 3 GND!
+rlabel metal1 231 7 231 32 7 GND!
+<< end >>

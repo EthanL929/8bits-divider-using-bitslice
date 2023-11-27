@@ -1,0 +1,111 @@
+magic
+tech tsmc180
+timestamp 1673624206
+<< nwell >>
+rect 0 429 132 866
+<< polysilicon >>
+rect 84 795 93 806
+rect 38 705 47 716
+rect 38 651 47 656
+rect 84 635 93 746
+rect 38 299 47 626
+rect 38 261 47 272
+rect 83 260 92 614
+rect 83 226 92 239
+rect 83 188 92 199
+<< ndiffusion >>
+rect 35 272 38 299
+rect 47 272 50 299
+rect 80 199 83 226
+rect 92 199 96 226
+<< pdiffusion >>
+rect 60 793 84 795
+rect 81 768 84 793
+rect 60 746 84 768
+rect 93 793 117 795
+rect 93 768 96 793
+rect 93 746 117 768
+rect 14 703 38 705
+rect 35 678 38 703
+rect 14 656 38 678
+rect 47 703 71 705
+rect 47 678 50 703
+rect 47 656 71 678
+<< pohmic >>
+rect 0 7 23 32
+rect 46 7 132 32
+<< nohmic >>
+rect 0 834 70 859
+rect 96 834 132 859
+<< ntransistor >>
+rect 38 272 47 299
+rect 83 199 92 226
+<< ptransistor >>
+rect 84 746 93 795
+rect 38 656 47 705
+<< polycontact >>
+rect 26 626 47 651
+rect 83 614 104 635
+rect 80 239 101 260
+<< ndiffcontact >>
+rect 14 272 35 299
+rect 50 272 71 299
+rect 59 199 80 226
+rect 96 199 117 226
+<< pdiffcontact >>
+rect 60 768 81 793
+rect 96 768 117 793
+rect 14 678 35 703
+rect 50 678 71 703
+<< psubstratetap >>
+rect 23 7 46 32
+<< nsubstratetap >>
+rect 70 834 96 859
+<< metal1 >>
+rect 0 834 70 859
+rect 96 834 132 859
+rect 16 703 28 834
+rect 67 793 79 834
+rect 59 628 71 678
+rect 59 616 83 628
+rect 0 434 132 446
+rect 0 401 132 413
+rect 0 377 132 389
+rect 0 353 132 365
+rect 0 329 132 341
+rect 18 32 30 272
+rect 54 252 66 272
+rect 54 240 80 252
+rect 67 32 79 199
+rect 0 7 23 32
+rect 46 7 132 32
+<< m2contact >>
+rect 96 768 117 793
+rect 26 626 47 651
+rect 96 199 117 226
+<< metal2 >>
+rect 33 651 47 866
+rect 99 793 113 866
+rect 33 0 47 626
+rect 99 226 113 768
+rect 99 0 113 199
+<< labels >>
+rlabel metal1 0 834 0 859 3 Vdd!
+rlabel metal1 0 329 0 341 3 nReset
+rlabel metal1 0 7 0 32 3 GND!
+rlabel metal1 0 353 0 365 3 Clock
+rlabel metal1 0 377 0 389 3 Test
+rlabel metal1 0 401 0 413 3 Scan
+rlabel metal1 0 434 0 446 3 ScanReturn
+rlabel metal2 99 0 113 0 1 Y
+rlabel metal2 33 0 47 0 1 A
+rlabel metal1 132 7 132 32 7 GND!
+rlabel metal1 132 329 132 341 7 nReset
+rlabel metal1 132 834 132 859 7 Vdd!
+rlabel metal1 132 353 132 365 7 Clock
+rlabel metal1 132 377 132 389 7 Test
+rlabel metal1 132 401 132 413 7 Scan
+rlabel metal1 132 434 132 446 7 ScanReturn
+rlabel metal2 33 866 47 866 5 A
+rlabel metal2 99 866 113 866 5 Y
+<< end >>

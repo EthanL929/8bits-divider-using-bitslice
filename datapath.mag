@@ -1,0 +1,163 @@
+magic
+tech tsmc180
+timestamp 1673618719
+<< metal1 >>
+rect 1971 7857 2378 7869
+rect 5899 7858 8910 7870
+rect 0 7831 6 7843
+rect 10104 7831 10110 7843
+rect 0 7797 6 7809
+rect 10104 7797 10110 7809
+rect 0 6851 6 6863
+rect 10104 6851 10110 6863
+rect 0 6817 6 6829
+rect 10104 6817 10110 6829
+rect 0 5871 6 5883
+rect 10104 5871 10110 5883
+rect 0 5837 6 5849
+rect 10104 5837 10110 5849
+rect 0 4891 6 4903
+rect 10104 4891 10110 4903
+rect 0 4857 6 4869
+rect 10104 4857 10110 4869
+rect 0 3911 6 3923
+rect 10104 3911 10110 3923
+rect 0 3877 6 3889
+rect 10104 3877 10110 3889
+rect 0 2931 6 2943
+rect 10104 2931 10110 2943
+rect 0 2897 6 2909
+rect 10104 2897 10110 2909
+rect 0 1951 6 1963
+rect 10104 1951 10110 1963
+rect 0 1917 6 1929
+rect 10104 1917 10110 1929
+rect 0 971 6 983
+rect 10104 971 10110 983
+rect 0 937 6 949
+rect 10104 937 10110 949
+rect 3819 17 4026 29
+rect 8374 15 8548 27
+<< m2contact >>
+rect 1947 7855 1971 7877
+rect 2378 7855 2402 7877
+rect 5875 7853 5899 7875
+rect 8910 7855 8934 7877
+<< metal2 >>
+rect 6 7848 256 7879
+rect 270 7848 284 7879
+rect 402 7848 416 7879
+rect 798 7848 812 7879
+rect 1227 7848 1241 7879
+rect 1722 7848 1736 7879
+rect 1953 7877 1967 7879
+rect 1953 7848 1967 7855
+rect 2382 7848 2396 7855
+rect 3009 7848 3023 7879
+rect 3801 7848 3815 7879
+rect 4131 7848 4145 7879
+rect 4626 7848 4640 7879
+rect 5385 7848 5399 7879
+rect 5880 7875 5894 7879
+rect 5880 7848 5894 7853
+rect 6705 7848 6719 7879
+rect 7464 7848 7478 7879
+rect 8355 7848 8369 7879
+rect 8916 7848 8930 7855
+rect 9842 7848 10092 7879
+rect 6 0 256 8
+rect 270 0 284 8
+rect 402 0 416 8
+rect 798 0 812 8
+rect 1227 0 1241 8
+rect 9842 0 10092 8
+use bitslice  bitslice_7
+timestamp 1673618719
+transform 1 0 6 0 1 6891
+box 0 -23 10098 957
+use bitslice  bitslice_6
+timestamp 1673618719
+transform 1 0 6 0 1 5911
+box 0 -23 10098 957
+use bitslice  bitslice_5
+timestamp 1673618719
+transform 1 0 6 0 1 4931
+box 0 -23 10098 957
+use bitslice  bitslice_4
+timestamp 1673618719
+transform 1 0 6 0 1 3951
+box 0 -23 10098 957
+use bitslice  bitslice_3
+timestamp 1673618719
+transform 1 0 6 0 1 2971
+box 0 -23 10098 957
+use bitslice  bitslice_2
+timestamp 1673618719
+transform 1 0 6 0 1 1991
+box 0 -23 10098 957
+use bitslice  bitslice_1
+timestamp 1673618719
+transform 1 0 6 0 1 1011
+box 0 -23 10098 957
+use bitslice  bitslice_0
+timestamp 1673618719
+transform 1 0 6 0 1 31
+box 0 -23 10098 957
+<< labels >>
+rlabel metal1 0 971 0 983 3 Operand1<0>
+rlabel metal1 0 937 0 949 3 Operand2<0>
+rlabel metal1 10110 937 10110 949 7 Quotient<0>
+rlabel metal1 10110 971 10110 983 7 Remainder<0>
+rlabel metal1 0 1951 0 1963 3 Operand1<1>
+rlabel metal1 0 1917 0 1929 3 Operand2<1>
+rlabel metal1 10110 1951 10110 1963 7 Remainder<1>
+rlabel metal1 10110 1917 10110 1929 7 Quotient<1>
+rlabel metal1 0 2931 0 2943 3 Operand1<2>
+rlabel metal1 0 2897 0 2909 3 Operand2<2>
+rlabel metal1 10110 2931 10110 2943 7 Remainder<2>
+rlabel metal1 10110 2897 10110 2909 7 Quotient<2>
+rlabel metal1 0 3911 0 3923 3 Operand1<3>
+rlabel metal1 0 3877 0 3889 3 Operand2<3>
+rlabel metal1 10110 3911 10110 3923 7 Remainder<3>
+rlabel metal1 10110 3877 10110 3889 7 Quotient<3>
+rlabel metal1 0 4891 0 4903 3 Operand1<4>
+rlabel metal1 0 4857 0 4869 3 Operand2<4>
+rlabel metal1 10110 4891 10110 4903 7 Remainder<4>
+rlabel metal1 10110 4857 10110 4869 7 Quotient<4>
+rlabel metal1 0 5871 0 5883 3 Operand1<5>
+rlabel metal1 0 5837 0 5849 3 Operand2<5>
+rlabel metal1 10110 5871 10110 5883 7 Remainder<5>
+rlabel metal1 10110 5837 10110 5849 7 Quotient<5>
+rlabel metal1 0 6851 0 6863 3 Operand1<6>
+rlabel metal1 0 6817 0 6829 3 Operand2<6>
+rlabel metal1 10110 6851 10110 6863 7 Remainder<6>
+rlabel metal1 10110 6817 10110 6829 7 Quotient<6>
+rlabel metal1 0 7831 0 7843 3 Operand1<7>
+rlabel metal1 0 7797 0 7809 3 Operand2<7>
+rlabel metal1 10110 7797 10110 7809 7 Quotient<7>
+rlabel metal1 10110 7831 10110 7843 7 Remainder<7>
+rlabel metal2 1953 7879 1967 7879 5 EnableZero
+rlabel metal2 5880 7879 5894 7879 5 LoadResult
+rlabel metal2 270 7879 284 7879 5 SDO
+rlabel metal2 402 7879 416 7879 5 nReset
+rlabel metal2 798 7879 812 7879 5 Clock
+rlabel metal2 1227 7879 1241 7879 5 Test
+rlabel metal2 1722 7879 1736 7879 5 EnableOp2
+rlabel metal2 6 7879 256 7879 5 Vdd!
+rlabel metal2 5385 7879 5399 7879 5 EnableSub
+rlabel metal2 4626 7879 4640 7879 5 LoadA
+rlabel metal2 4131 7879 4145 7879 5 EnableOp1
+rlabel metal2 3801 7879 3815 7879 5 nBorrow
+rlabel metal2 3009 7879 3023 7879 5 LoadB
+rlabel metal2 6705 7879 6719 7879 5 Increment
+rlabel metal2 7464 7879 7478 7879 5 LoadM
+rlabel metal2 8355 7879 8369 7879 5 Overflow
+rlabel metal2 9842 7879 10092 7879 5 GND!
+rlabel metal2 6 0 256 0 1 Vdd!
+rlabel metal2 270 0 284 0 1 SDI
+rlabel metal2 402 0 416 0 1 nReset
+rlabel metal2 798 0 812 0 1 Clock
+rlabel metal2 1227 0 1241 0 1 Test
+rlabel metal2 9842 0 10092 0 1 GND!
+rlabel space 3807 23 3807 23 1 nB0
+<< end >>

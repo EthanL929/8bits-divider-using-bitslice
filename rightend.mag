@@ -1,0 +1,82 @@
+magic
+tech tsmc180
+timestamp 1673624206
+<< nwell >>
+rect 0 429 179 866
+<< polysilicon >>
+rect 125 783 134 794
+rect 125 418 134 734
+rect 125 86 134 397
+rect 125 47 134 59
+<< ndiffusion >>
+rect 122 59 125 86
+rect 134 59 146 86
+<< pdiffusion >>
+rect 122 734 125 783
+rect 134 734 146 783
+<< pohmic >>
+rect 0 31 483 32
+rect 0 8 148 31
+rect 171 8 483 31
+rect 0 7 483 8
+<< nohmic >>
+rect 0 858 495 859
+rect 0 835 148 858
+rect 171 835 495 858
+rect 0 834 495 835
+<< ntransistor >>
+rect 125 59 134 86
+<< ptransistor >>
+rect 125 734 134 783
+<< polycontact >>
+rect 113 397 134 418
+<< ndiffcontact >>
+rect 101 59 122 86
+rect 146 59 167 86
+<< pdiffcontact >>
+rect 101 734 122 783
+rect 146 734 167 783
+<< psubstratetap >>
+rect 148 8 171 31
+<< nsubstratetap >>
+rect 148 835 171 858
+<< metal1 >>
+rect 0 858 495 859
+rect 0 835 148 858
+rect 171 835 495 858
+rect 0 834 495 835
+rect 68 446 89 799
+rect 101 783 122 834
+rect 0 434 89 446
+rect 0 401 113 413
+rect 146 399 167 734
+rect 184 399 205 799
+rect 146 378 205 399
+rect 146 86 167 378
+rect 101 32 122 59
+rect 0 31 233 32
+rect 0 8 148 31
+rect 171 8 233 31
+rect 0 7 233 8
+rect 258 7 458 32
+<< m2contact >>
+rect 68 799 89 820
+rect 184 799 205 820
+rect 233 7 258 32
+rect 458 7 483 32
+<< metal2 >>
+rect 89 799 184 820
+rect 233 32 483 866
+rect 258 7 458 32
+rect 233 0 483 7
+<< labels >>
+rlabel polysilicon 130 47 130 47 1 Scan
+rlabel polysilicon 130 794 130 794 1 Scan
+rlabel metal1 495 834 495 859 7 Vdd!
+rlabel metal2 233 866 483 866 1 GND!
+rlabel metal2 233 0 483 0 1 GND!
+rlabel metal1 0 401 0 413 3 Scan
+rlabel metal1 0 834 0 859 3 Vdd!
+rlabel metal1 0 7 0 32 3 GND!
+rlabel metal1 0 434 0 446 3 nScan
+<< end >>

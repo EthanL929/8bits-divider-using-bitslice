@@ -1,0 +1,354 @@
+       Found directory /home/yl7m22/design/magic/tsmc180/bitslice
+
+       Enter type of datapath designed:
+        1) Datapath for simple Division Alogorithm (no shifting required)
+              see page 3 of coursework handout
+        2) Datapath for alternative Division Alogorithm (with shifting)
+              see page 9 of coursework handout
+        3) User Specified Datapath
+              see page 11 of coursework handout
+       Type <1/2/3>: 1
+       Expecting cells: leftbuf rightend scanreg trisbuf mux2 fulladder inv nand2 nand3 halfadder buffer tielow tiehigh bitslice datapath control
+         Found magic file bitslice.mag
+         Found magic file datapath.mag
+         Found magic file control.mag
+         Found magic file ../cell_lib/leftbuf.mag
+         Found magic file ../cell_lib/rightend.mag
+         Found magic file ../cell_lib/scanreg.mag
+         Found magic file ../cell_lib/trisbuf.mag
+         Found magic file ../cell_lib/mux2.mag
+         Found magic file ../cell_lib/fulladder.mag
+         Found magic file ../cell_lib/inv.mag
+         Found magic file ../cell_lib/nand2.mag
+         Found magic file ../cell_lib/nand3.mag
+         Found magic file ../cell_lib/halfadder.mag
+         Found magic file ../cell_lib/buffer.mag
+         Found magic file ../cell_lib/tielow.mag
+         Found magic file ../cell_lib/tiehigh.mag
+         Found Verilog file: behavioural/control.sv
+         Found Verilog file: behavioural/divider.sv
+         Found Verilog file: behavioural/control_stim.sv
+         Found Verilog file: behavioural/divider_stim.sv
+         Found Verilog file: gate_level/control.sv
+         Found Verilog file: extracted/bitslice.sv
+         Found Verilog file: extracted/datapath.sv
+         Found Verilog file: extracted/control.sv
+         Found Verilog file: extracted/bitslice_stim.sv
+         Found Verilog file: extracted/datapath_stim.sv
+         Found file extracted/bitslice.vnet
+         Found file extracted/datapath.vnet
+         Found file extracted/control.vnet
+         Found file behavioural/divider.tcl
+       basic file checks completed ok
+
+       Checking leaf cells
+         leftbuf.mag is flat
+         rightend.mag is flat
+         scanreg.mag is flat
+         trisbuf.mag is flat
+         mux2.mag is flat
+         fulladder.mag is flat
+         inv.mag is flat
+         nand2.mag is flat
+         nand3.mag is flat
+         halfadder.mag is flat
+         buffer.mag is flat
+         tielow.mag is flat
+         tiehigh.mag is flat
+       Checking datapath for subcell bitslice
+         Found bitslice used in datapath
+       Checking bitslice for subcells only from allowed list:
+         leftbuf rightend scandtype scanreg trisbuf mux2 fulladder xor2 inv nand2 nand3 nor2 nor3 halfadder and2 or2 nand4 buffer scanpdtype scanpreg xnor2 nor4 and3 mux4 tielow tiehigh rowcrosser
+         Found fulladder used in bitslice
+         Found halfadder used in bitslice
+         Found leftbuf used in bitslice
+         Found mux2 used in bitslice
+         Found rightend used in bitslice
+         Found scanreg used in bitslice
+         Found tiehigh used in bitslice
+         Found tielow used in bitslice
+         Found trisbuf used in bitslice
+       Checking control for subcells only from allowed list:
+         leftbuf rightend scandtype scanreg trisbuf mux2 fulladder xor2 inv nand2 nand3 nor2 nor3 halfadder and2 or2 nand4 buffer scanpdtype scanpreg xnor2 nor4 and3 mux4 tielow tiehigh rowcrosser
+         Found buffer used in control
+         Found inv used in control
+         Found leftbuf used in control
+         Found nand2 used in control
+         Found nand3 used in control
+         Found rightend used in control
+         Found scanreg used in control
+       more file checks completed ok
+
+       Performing simple test on divider
+         xmverilog +sv divider_check.sv behavioural/divider.sv behavioural/control.sv extracted/datapath.sv +incdir+extracted
+***
+***
+***
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:16:52 GMT
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:16:52 GMT
+xmverilog(64): 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+xmverilog: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/yl7m22/design/magic/tsmc180/bitslice/xcelium.d/run.lnx8664.21.03.d/.xmlib.lock'. pid:13410.
+file: behavioural/divider.sv
+	module worklib.divider:sv
+		errors: 0, warnings: 0
+file: behavioural/control.sv
+	module worklib.control:sv
+		errors: 0, warnings: 0
+file: extracted/datapath.sv
+	module worklib.datapath:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory extracted given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  divider instance1(
+                  |
+xmelab: *W,CUVWSP (./divider_check.sv,12|18): 1 output port was not connected:
+xmelab: (./behavioural/divider.sv,4): SDO
+
+  divider instance1(
+                  |
+xmelab: *W,CUVWSI (./divider_check.sv,12|18): 2 input ports were not connected:
+xmelab: (./behavioural/divider.sv,7): Test
+xmelab: (./behavioural/divider.sv,7): SDI
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.control:sv <0x34f908f6>
+			streams:  15, words:  9255
+		worklib.divider:sv <0x1553a46e>
+			streams:  18, words:  3726
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  4       4
+		Primitives:            3234       6
+		Registers:               26      26
+		Scalar wires:          1269       -
+		Expanded wires:          16       2
+		Always blocks:            2       2
+		Initial blocks:           3       3
+		Pseudo assignments:      18      18
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.divider_check:sv
+Loading snapshot worklib.divider_check:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /eda/cadence/xcelium/tools/xcelium/files/xmsimrc
+xcelium> run
+DIVISION: Simulation did not terminate within         260 cycles
+Simulation complete via $finish(1) at time 261100 NS + 0
+./divider_check.sv:62       $finish;
+xcelium> exit
+TOOL:	xmverilog	21.03-s009: Exiting on Jan 13, 2023 at 16:18:07 GMT  (total: 00:01:15)
+***
+***
+***
+
+=>       DIVISION: Simulation did not terminate within         260 cycles
+WARNING- Failed
+         Check file divider_check.log for more details
+         And/or re-run verilog command:
+           xmverilog +sv divider_check.sv behavioural/divider.sv behavioural/control.sv extracted/datapath.sv +incdir+extracted
+
+       Performing simple scan path test on bitslice
+         xmverilog +sv bitslice_scan_check.sv \
+           -y extracted +libext+.sv +incdir+extracted \
+           +define+DUT=bitslice
+***
+***
+***
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:18:07 GMT
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:18:07 GMT
+xmverilog(64): 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+file: extracted/bitslice.sv
+xmvlog: *W,SPDUSD: Include directory extracted given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+		Caching library 'extracted' ....... Done
+	Elaborating the design hierarchy:
+  bitslice instance1(
+                   |
+xmelab: *W,CUVWSP (./bitslice_scan_check.sv,28|19): 3 output ports were not connected:
+xmelab: (./extracted/bitslice.sv,5): High
+xmelab: (./extracted/bitslice.sv,6): nBorrowOut
+xmelab: (./extracted/bitslice.sv,7): Overflow
+
+  bitslice instance1(
+                   |
+xmelab: *W,CUVWSI (./bitslice_scan_check.sv,28|19): 10 input ports were not connected:
+xmelab: (./extracted/bitslice.sv,12): EnableOp1
+xmelab: (./extracted/bitslice.sv,13): EnableOp2
+xmelab: (./extracted/bitslice.sv,14): EnableSub
+xmelab: (./extracted/bitslice.sv,15): EnableZero
+xmelab: (./extracted/bitslice.sv,16): Increment
+xmelab: (./extracted/bitslice.sv,17): LoadA
+xmelab: (./extracted/bitslice.sv,18): LoadB
+xmelab: (./extracted/bitslice.sv,19): LoadM
+xmelab: (./extracted/bitslice.sv,20): LoadResult
+xmelab: (./extracted/bitslice.sv,21): nBorrowIn
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+pmos #1 ( \halfadder_0/active_60_708# , vdd , \1 );
+                                                |
+xmelab: *W,CSINFI (./bitslice.vnet,67|48): implicit wire has no fanin (bitslice_scan_check.instance1.\1 ).
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Primitives:             406       6
+		Registers:                7       7
+		Scalar wires:           160       -
+		Always blocks:            1       1
+		Initial blocks:           3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.bitslice_scan_check:sv
+Loading snapshot worklib.bitslice_scan_check:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /eda/cadence/xcelium/tools/xcelium/files/xmsimrc
+xcelium> run
+BITSLICE SCAN TEST: Found           5 dtypes/registers in scan path
+Simulation complete via $finish(1) at time 7 US + 0
+./bitslice_scan_check.sv:86       $finish;
+xcelium> exit
+TOOL:	xmverilog	21.03-s009: Exiting on Jan 13, 2023 at 16:18:08 GMT  (total: 00:00:01)
+***
+***
+***
+
+=>       BITSLICE SCAN TEST: Found           5 dtypes/registers in scan path
+         Done
+
+       Performing simple scan path test on datapath
+         xmverilog +sv datapath_scan_check.sv \
+           -y extracted +libext+.sv +incdir+extracted \
+           +define+DUT=datapath
+***
+***
+***
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:18:09 GMT
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:18:09 GMT
+xmverilog(64): 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+file: extracted/datapath.sv
+xmvlog: *W,SPDUSD: Include directory extracted given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+		Caching library 'extracted' ....... Done
+	Elaborating the design hierarchy:
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Primitives:            3234       6
+		Registers:               16      16
+		Scalar wires:          1251       -
+		Expanded wires:          16       2
+		Always blocks:            1       1
+		Initial blocks:           3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.datapath_scan_check:sv
+Loading snapshot worklib.datapath_scan_check:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /eda/cadence/xcelium/tools/xcelium/files/xmsimrc
+xcelium> run
+DATAPATH SCAN TEST: Found          40 dtypes/registers in scan path
+Simulation complete via $finish(1) at time 42 US + 0
+./datapath_scan_check.sv:159       $finish;
+xcelium> exit
+TOOL:	xmverilog	21.03-s009: Exiting on Jan 13, 2023 at 16:18:10 GMT  (total: 00:00:01)
+***
+***
+***
+
+=>       DATAPATH SCAN TEST: Found          40 dtypes/registers in scan path
+         Done
+
+       Performing simple scan path test on control
+         xmverilog +sv minimal_scan_check.sv \
+           -y extracted +libext+.sv +incdir+extracted \
+           +define+DUT=control
+***
+***
+***
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:18:10 GMT
+TOOL:	xmverilog	21.03-s009: Started on Jan 13, 2023 at 16:18:11 GMT
+xmverilog(64): 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+file: minimal_scan_check.sv
+	module worklib.minimal_scan_check:sv
+		errors: 0, warnings: 0
+file: extracted/control.sv
+	module extracted.control:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'extracted' ....... Done
+	Elaborating the design hierarchy:
+  `DUT instance1(
+               |
+xmelab: *W,CUVWSP (./minimal_scan_check.sv,12|15): 10 output ports were not connected:
+xmelab: (./extracted/control.sv,5): EnableZero
+xmelab: (./extracted/control.sv,5): EnableOp1
+xmelab: (./extracted/control.sv,5): EnableOp2
+xmelab: (./extracted/control.sv,5): EnableSub
+xmelab: (./extracted/control.sv,5): Increment
+xmelab: (./extracted/control.sv,5): LoadA
+xmelab: (./extracted/control.sv,5): LoadB
+xmelab: (./extracted/control.sv,5): LoadM
+xmelab: (./extracted/control.sv,5): LoadResult
+xmelab: (./extracted/control.sv,5): Done
+
+  `DUT instance1(
+               |
+xmelab: *W,CUVWSI (./minimal_scan_check.sv,12|15): 3 input ports were not connected:
+xmelab: (./extracted/control.sv,5): nBorrow
+xmelab: (./extracted/control.sv,5): Overflow
+xmelab: (./extracted/control.sv,5): Req
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.minimal_scan_check:sv <0x3b0703fd>
+			streams:   4, words:  4883
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Primitives:             708       6
+		Registers:                5       5
+		Scalar wires:           270       -
+		Always blocks:            1       1
+		Initial blocks:           3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.minimal_scan_check:sv
+Loading snapshot worklib.minimal_scan_check:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /eda/cadence/xcelium/tools/xcelium/files/xmsimrc
+xcelium> run
+CONTROL SCAN TEST: Found          11 dtypes/registers in scan path
+Simulation complete via $finish(1) at time 13 US + 0
+./minimal_scan_check.sv:55       $finish;
+xcelium> exit
+TOOL:	xmverilog	21.03-s009: Exiting on Jan 13, 2023 at 16:18:12 GMT  (total: 00:00:01)
+***
+***
+***
+
+=>       CONTROL SCAN TEST: Found          11 dtypes/registers in scan path
+         Done
+
+       simulation checks failed (you may still submit)
+
+
+       Writing infofile.txt
+       Done
+
+       Writing handin.tar

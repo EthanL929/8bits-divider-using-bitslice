@@ -1,0 +1,92 @@
+magic
+tech tsmc180
+timestamp 1673624206
+<< nwell >>
+rect 0 429 132 866
+<< polysilicon >>
+rect 38 705 47 716
+rect 101 703 110 717
+rect 38 651 47 656
+rect 101 651 110 678
+rect 38 133 47 626
+rect 101 133 110 626
+rect 38 95 47 106
+rect 101 93 110 108
+<< ndiffusion >>
+rect 35 106 38 133
+rect 47 106 55 133
+<< pdiffusion >>
+rect 7 703 38 705
+rect 7 678 14 703
+rect 35 678 38 703
+rect 7 656 38 678
+rect 47 703 71 705
+rect 47 678 50 703
+rect 47 656 71 678
+<< pohmic >>
+rect 0 7 62 32
+rect 85 7 132 32
+<< nohmic >>
+rect 0 834 53 859
+rect 79 834 132 859
+<< ntransistor >>
+rect 38 106 47 133
+<< ptransistor >>
+rect 38 656 47 705
+<< polycontact >>
+rect 95 678 116 703
+rect 26 626 47 651
+rect 96 626 117 651
+rect 101 108 122 133
+<< ndiffcontact >>
+rect 7 106 35 133
+rect 55 106 76 133
+<< pdiffcontact >>
+rect 14 678 35 703
+rect 50 678 71 703
+<< psubstratetap >>
+rect 62 7 85 32
+<< nsubstratetap >>
+rect 53 834 79 859
+<< metal1 >>
+rect 0 834 53 859
+rect 79 834 132 859
+rect 16 703 28 834
+rect 71 687 95 699
+rect 0 434 132 446
+rect 0 401 132 413
+rect 0 377 132 389
+rect 0 353 132 365
+rect 0 329 132 341
+rect 76 116 101 128
+rect 18 32 30 106
+rect 0 7 62 32
+rect 85 7 132 32
+<< m2contact >>
+rect 26 626 47 651
+rect 96 626 117 651
+<< metal2 >>
+rect 33 651 47 866
+rect 99 651 113 866
+rect 33 0 47 626
+rect 99 0 113 626
+<< labels >>
+rlabel metal1 0 834 0 859 3 Vdd!
+rlabel metal1 132 834 132 859 7 Vdd!
+rlabel metal1 0 7 0 32 3 GND!
+rlabel metal1 132 7 132 32 7 GND!
+rlabel metal1 132 329 132 341 7 nReset
+rlabel metal1 0 329 0 341 3 nReset
+rlabel metal1 132 353 132 365 7 Clock
+rlabel metal1 0 353 0 365 3 Clock
+rlabel metal1 132 377 132 389 7 Test
+rlabel metal1 0 377 0 389 3 Test
+rlabel metal1 132 401 132 413 7 Scan
+rlabel metal1 0 401 0 413 3 Scan
+rlabel metal1 132 434 132 446 7 ScanReturn
+rlabel metal1 0 434 0 446 3 ScanReturn
+rlabel metal2 33 866 47 866 5 A
+rlabel metal2 99 866 113 866 5 Y
+rlabel metal2 33 0 47 0 1 A
+rlabel metal2 99 0 113 0 1 Y
+<< end >>

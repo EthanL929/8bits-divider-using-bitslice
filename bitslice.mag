@@ -1,0 +1,269 @@
+magic
+tech tsmc180
+timestamp 1673618719
+<< metal1 >>
+rect 0 940 4186 952
+rect 6487 940 10098 952
+rect 0 906 1776 918
+rect 1868 906 2503 918
+rect 2658 906 2931 918
+rect 3915 906 5439 918
+rect 5529 906 5801 918
+rect 6982 906 7387 918
+rect 8072 906 8839 918
+rect 9523 906 10098 918
+rect 2098 11 2305 23
+rect 3747 18 5209 30
+rect 6652 18 8410 30
+rect 4572 -16 5507 -4
+<< m2contact >>
+rect 4186 933 4210 955
+rect 6463 933 6487 955
+rect 1776 906 1800 928
+rect 1844 906 1868 928
+rect 2503 906 2527 928
+rect 2634 906 2658 928
+rect 2931 906 2955 928
+rect 3891 906 3915 928
+rect 5439 906 5463 928
+rect 5505 906 5529 928
+rect 5801 906 5825 928
+rect 6958 906 6982 928
+rect 7387 906 7411 928
+rect 8048 906 8072 928
+rect 8839 906 8863 928
+rect 9499 906 9523 928
+rect 2074 8 2098 30
+rect 2305 8 2329 30
+rect 3723 8 3747 30
+rect 5209 8 5233 30
+rect 6628 8 6652 30
+rect 8410 8 8434 30
+rect 3789 -16 3813 6
+rect 4020 -16 4044 6
+rect 4548 -17 4572 5
+rect 5507 -16 5531 6
+rect 8344 -16 8368 6
+rect 8542 -16 8566 6
+<< metal2 >>
+rect 0 901 250 957
+rect 264 901 278 957
+rect 396 901 410 957
+rect 792 901 806 957
+rect 1221 901 1235 957
+rect 1716 901 1730 957
+rect 1782 901 1796 906
+rect 1848 901 1862 906
+rect 1947 901 1961 957
+rect 2013 915 2225 929
+rect 2013 901 2027 915
+rect 2211 901 2225 915
+rect 2376 901 2390 957
+rect 2508 901 2522 906
+rect 2640 901 2654 906
+rect 2937 901 2951 906
+rect 3003 901 3017 957
+rect 3795 929 3809 957
+rect 3564 915 3776 929
+rect 3795 915 3875 929
+rect 3564 901 3578 915
+rect 3762 901 3776 915
+rect 3861 901 3875 915
+rect 3894 901 3908 906
+rect 4026 901 4040 957
+rect 4125 901 4139 957
+rect 4191 901 4205 933
+rect 4257 912 4568 926
+rect 4257 901 4271 912
+rect 4554 901 4568 912
+rect 4620 901 4634 957
+rect 5379 901 5393 957
+rect 5445 901 5459 906
+rect 5511 901 5525 906
+rect 5808 901 5822 906
+rect 5874 901 5888 957
+rect 6468 901 6482 933
+rect 6699 901 6713 957
+rect 6831 942 7109 956
+rect 6831 901 6845 942
+rect 6963 901 6977 906
+rect 7095 901 7109 942
+rect 7392 901 7406 906
+rect 7458 901 7472 957
+rect 8349 929 8363 957
+rect 8349 915 8396 929
+rect 8052 901 8066 906
+rect 8382 901 8396 915
+rect 8547 901 8561 957
+rect 8844 901 8858 906
+rect 8910 901 8924 957
+rect 9504 901 9518 906
+rect 9836 901 10086 957
+rect 0 -23 250 35
+rect 264 -23 278 35
+rect 396 -23 410 35
+rect 792 -23 806 35
+rect 1221 -23 1235 35
+rect 1716 -23 1730 35
+rect 1947 -23 1961 35
+rect 2079 30 2093 35
+rect 2310 30 2324 35
+rect 2376 -23 2390 35
+rect 3003 -23 3017 35
+rect 3729 30 3743 35
+rect 3795 6 3809 35
+rect 4026 6 4040 35
+rect 3795 -23 3809 -16
+rect 4026 -23 4040 -16
+rect 4125 -23 4139 35
+rect 4554 5 4568 35
+rect 4620 -23 4634 35
+rect 5214 30 5228 35
+rect 5379 -23 5393 35
+rect 5445 6 5459 35
+rect 5511 6 5525 35
+rect 5874 -23 5888 35
+rect 6633 30 6647 35
+rect 6699 -23 6713 35
+rect 7458 -23 7472 35
+rect 8052 27 8066 35
+rect 8283 27 8297 35
+rect 8052 13 8297 27
+rect 8349 6 8363 35
+rect 8415 30 8429 35
+rect 8547 6 8561 35
+rect 8349 -23 8363 -16
+rect 8547 -23 8561 -16
+rect 8910 -23 8924 35
+rect 9836 -23 10086 35
+use leftbuf  leftbuf_0
+timestamp 1672154672
+transform 1 0 0 0 1 35
+box 0 0 1650 866
+use trisbuf  trisbuf_0
+timestamp 1672154672
+transform 1 0 1650 0 1 35
+box 0 0 231 866
+use trisbuf  trisbuf_1
+timestamp 1672154672
+transform 1 0 1881 0 1 35
+box 0 0 231 866
+use tielow  tielow_0
+timestamp 1672154672
+transform 1 0 2112 0 1 35
+box 0 0 132 866
+use mux2  mux2_0
+timestamp 1672154672
+transform 1 0 2244 0 1 35
+box 0 0 429 866
+use scanreg  scanreg_0
+timestamp 1672154672
+transform 1 0 2673 0 1 35
+box 0 0 1023 866
+use fulladder  fulladder_0
+timestamp 1672154672
+transform 1 0 3696 0 1 35
+box 0 0 231 866
+use tiehigh  tiehigh_0
+timestamp 1670606464
+transform 1 0 3927 0 1 35
+box 0 0 132 866
+use trisbuf  trisbuf_2
+timestamp 1672154672
+transform 1 0 4059 0 1 35
+box 0 0 231 866
+use scanreg  scanreg_1
+timestamp 1672154672
+transform 1 0 4290 0 1 35
+box 0 0 1023 866
+use trisbuf  trisbuf_3
+timestamp 1672154672
+transform 1 0 5313 0 1 35
+box 0 0 231 866
+use scanreg  scanreg_2
+timestamp 1672154672
+transform 1 0 5544 0 1 35
+box 0 0 1023 866
+use mux2  mux2_1
+timestamp 1672154672
+transform 1 0 6567 0 1 35
+box 0 0 429 866
+use tielow  tielow_1
+timestamp 1672154672
+transform 1 0 6996 0 1 35
+box 0 0 132 866
+use scanreg  scanreg_3
+timestamp 1672154672
+transform 1 0 7128 0 1 35
+box 0 0 1023 866
+use halfadder  halfadder_0
+timestamp 1672154672
+transform 1 0 8151 0 1 35
+box 0 0 297 866
+use tiehigh  tiehigh_1
+timestamp 1670606464
+transform 1 0 8448 0 1 35
+box 0 0 132 866
+use scanreg  scanreg_4
+timestamp 1672154672
+transform 1 0 8580 0 1 35
+box 0 0 1023 866
+use rightend  rightend_0
+timestamp 1670606464
+transform 1 0 9603 0 1 35
+box 0 0 495 866
+<< labels >>
+rlabel metal1 0 906 0 918 3 Operand2
+rlabel metal1 0 940 0 952 3 Operand1
+rlabel metal2 2376 957 2390 957 5 EnableZero
+rlabel metal2 3003 957 3017 957 5 LoadB
+rlabel metal2 3795 957 3809 957 5 nBorrowOut
+rlabel metal2 0 957 250 957 5 Vdd!
+rlabel metal2 264 957 278 957 5 SDO
+rlabel metal2 396 957 410 957 5 nReset
+rlabel metal2 792 957 806 957 5 Clock
+rlabel metal2 1221 957 1235 957 5 Test
+rlabel metal2 1716 957 1730 957 5 EnableOp2
+rlabel metal2 1947 957 1961 957 5 EnableZero
+rlabel metal2 4026 957 4040 957 5 High
+rlabel metal2 8349 957 8363 957 5 Overflow
+rlabel metal2 7458 957 7472 957 5 LoadM
+rlabel metal2 6699 957 6713 957 5 Increment
+rlabel metal2 5874 957 5888 957 5 LoadResult
+rlabel metal2 5379 957 5393 957 5 EnableSub
+rlabel metal2 4620 957 4634 957 5 LoadA
+rlabel metal2 4125 957 4139 957 5 EnableOp1
+rlabel metal2 8547 957 8561 957 5 High
+rlabel metal2 9836 957 10086 957 5 GND!
+rlabel metal1 10098 940 10098 952 7 Remainder
+rlabel metal1 10098 906 10098 918 7 Quotient
+rlabel metal2 8910 957 8924 957 5 LoadResult
+rlabel metal2 3795 -23 3809 -23 1 nBorrowIn
+rlabel metal2 4026 -23 4040 -23 1 High
+rlabel metal2 0 -23 250 -23 1 Vdd!
+rlabel metal2 264 -23 278 -23 1 SDI
+rlabel metal2 396 -23 410 -23 1 nReset
+rlabel metal2 792 -23 806 -23 1 Clock
+rlabel metal2 1221 -23 1235 -23 1 Test
+rlabel metal2 1716 -23 1730 -23 1 EnableOp2
+rlabel metal2 1947 -23 1961 -23 1 EnableZero
+rlabel metal2 3003 -23 3017 -23 1 LoadB
+rlabel metal2 2376 -23 2390 -23 1 EnableZero
+rlabel metal2 4620 -23 4634 -23 1 LoadA
+rlabel metal2 4125 -23 4139 -23 1 EnableOp1
+rlabel metal2 5874 -23 5888 -23 1 LoadResult
+rlabel metal2 5379 -23 5393 -23 1 EnableSub
+rlabel metal2 7458 -23 7472 -23 1 LoadM
+rlabel metal2 6699 -23 6713 -23 1 Increment
+rlabel metal2 9836 -23 10086 -23 1 GND!
+rlabel metal2 8910 -23 8924 -23 1 LoadResult
+rlabel metal2 8349 -23 8363 -23 1 1
+rlabel metal2 8547 -23 8561 -23 1 High
+rlabel m2contact 3735 21 3735 21 1 A
+rlabel metal2 3768 915 3768 915 1 B
+rlabel m2contact 3902 912 3902 912 1 S
+rlabel metal2 8290 16 8290 16 1 A1
+rlabel m2contact 8424 17 8424 17 1 S1
+rlabel m2contact 3802 -8 3802 -8 1 nB0
+rlabel m2contact 5516 -7 5516 -7 1 subOut
+<< end >>
